@@ -39,6 +39,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(150, 230);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 22);
@@ -72,7 +73,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 24);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Sing";
+            this.button2.Text = "Sign";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

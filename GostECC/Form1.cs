@@ -71,8 +71,9 @@ namespace GostECC
             d=DS.GenPrivateKey(192);
             Q = DS.GenPublicKey(d);            
             GOST hash = new GOST(256);
-            byte[] H = hash.GetHash(Encoding.Default.GetBytes("Message"));
+            byte[] H = hash.GetHash(Encoding.Default.GetBytes(textBox1.Text));
             string sign  = DS.SingGen(H, d);
+            textBox2.Text = sign;
             bool result = DS.SingVer(H, sign, Q);            
         }
 
